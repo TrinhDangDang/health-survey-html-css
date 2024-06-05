@@ -84,9 +84,25 @@ textarea{
 }
 #submit{
     display: block;
-    margin: auto;
+    margin: 40px auto;
     color: darkblue;
     width: 40%;
     padding: 15px;
-    font-size: 23px;
+    font-size: 23px; 
+    transition: transform 0.3s ease-out;
+}
+#submit:hover{
+    background-color: darkblue;
+    color: white;
+    transform: translateY(8px);
+}
+
+.profile-pic{
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-pic label{
+    width: 100%;
+    margin: 1rem 0;
 }
