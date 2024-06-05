@@ -1,2 +1,3 @@
-This is a html/css project for creating a health survey html page
+This is a html/css project for creating a health survey html page with different types of input such as radio, checkboxes, submit buttons,...
+
 
