@@ -1,9 +1,87 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>hello</title>
-    </head>
-    <body>
+  <head>
+    <title>Health Survey</title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="styles.css"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
-    </body>
+    <link
+    href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap"
+    rel="stylesheet"
+  />
+  </head>
+  <body>
+
+    <!--the heading on top of the health survey form-->
+    <header>
+    <div class="slogen">
+        <h1 id="title">Health Check Survey</h1>
+        <p id="description">Your Journey to Better Health Begins Here</p>
+    </div>
+    <div class="icon-and-name">
+        <i class="far fa-hospital"></i>
+        <h2>Galaxy Hospital</h2>
+    </div>
+    </header>
+
+
+
+    <form id="survey-form">
+      <fieldset class="personal-information">
+        <h2>Personal Information</h2>
+        <label id="name-label" for="name">Name: </label>
+        <input id="name" type="text" placeholder="Enter your name" required/>
+        <label id="email-label" for="email">Email: </label>
+        <input id="email" type="email" placeholder="Enter your email" required/>
+        <label id="number-label" for="number">DOB: </label>
+        <input id="DOB" type="date" min=0 max=99 placeholder="Enter your age">
+      </fieldset>
+
+
+      <fieldset class="questions">
+        <h2>Health Questions</h2>
+        <label class="question" for="feeling-dropdown">How are you feeling today? </label>
+        <select id="feeling-dropdown"><option value="good">Good</option><option value="not-so-good">Not so good</option><option value="bad">Bad</option></select>
+        <label class="question" for="check-up">How often do you go for check-up?</label>
+            <ul id="check-up">
+                <li><label><input type="radio" name="check-up" value="never"/> Never </label></li>
+                <li><label><input type="radio" name="check-up" value="sometimes"/> Sometimes</label></li>
+                <li><label><input type="radio" name="check-up" value="often"/> Often</label></label></li>
+            </ul>
+        <label class="question">Are you allergic to any of the following? </label>
+        <div class="checkbox-container">
+          <label>
+            <input type="checkbox" value="peanuts" name="allergies"> Peanuts
+          </label>
+          <label>
+            <input type="checkbox" value="shellfish" name="allergies"> Shellfish
+          </label>
+          <label>
+            <input type="checkbox" value="pollen" name="allergies"> Pollen
+          </label>
+          <label>
+            <input type="checkbox" value="almonds" name="allergies"> Almonds
+          </label>
+          <label>
+            <input type="checkbox" value="fragrences" name="allergies"> Fragrences
+          </label>
+          <label>
+            <input type="checkbox" value="eggs" name="allergies"> Eggs
+          </label>
+          <label>
+            <input type="checkbox" value="wheat" name="allergies"> Wheat
+          </label>
+          <label>
+            <input type="checkbox" value="pet-dander" name="allergies"> Pet dander
+          </label>
+        <label class="question">Describe your current condition: </label>
+    </div>
+        <textarea placeholder="I'm feeling great..."></textarea>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit"/>
+    </form>
+
+  </body>
+
 </html>

@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+}
+header{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around ;
+    align-items: center;
+    width: 100%; 
+    padding: 0 20px;
+    margin-bottom: 20px;
+    border-bottom: 10px solid darkblue;
+
+}
+
+header div:last-of-type {
+   display: flex;
+}
+i {
+    font-size: 50px;
+    margin: 5px;
+}
+
+#name, #email {
+    border: none;
+    border-bottom: 2px solid black;
+}
+fieldset{
+    border: none;
+    padding: 1rem;
+}
+fieldset:nth-of-type(2){
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+}
+.personal-information label{
+    display: block;
+    margin: 1rem 0;
+    background-color: darkblue;
+    color: white;
+}
+.personal-information input{
+    width: 100%;
+}
+form{
+    width: 70vw;
+    margin: 0 auto;
+    max-width: 600px;
+    min-width: 300px;
+    padding-bottom: 2em;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-left: 0;
+}
+
+.questions input{
+    vertical-align: middle;
+    
+}
+label.question{
+    display: block;
+    margin: 1rem 0;
+    background-color: darkblue;
+    color: white;
+    
+}
+textarea{
+    width: 100%;
+    min-height: 2em;
+}
+.checkbox-container{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+#submit{
+    display: block;
+    margin: auto;
+    color: darkblue;
+    width: 40%;
+    padding: 15px;
+    font-size: 23px;
+}
